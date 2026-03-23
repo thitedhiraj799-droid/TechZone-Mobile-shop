@@ -15,12 +15,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "images")));
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log("MongoDB Connected Successfully"))
 .catch(err => console.log(err));
 
 // User Model
-const User = require("./Models/User");
+const User = require("./models/User");
 
 
 // Routes
