@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI)
 .catch(err => console.log(err));
 
 // User Model
-const User = require("./models/User");
+const User = require("./Models/User");
 
 
 // Routes
